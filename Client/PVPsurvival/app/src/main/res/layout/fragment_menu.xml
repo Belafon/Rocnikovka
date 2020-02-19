@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.belafon.pvpsurvival.MenuScreen.MenuFragment"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="20dp">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:onClick="NewGame"
+            android:hint="@string/butStartGame"
+            android:textColorHint="@color/white"
+            android:background="@drawable/button" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:onClick="Character"
+            android:hint="@string/Character"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:onClick="Stats"
+            android:hint="@string/butStats"
+            android:textColorHint="@color/white"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"/>
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:hint="@string/butNastaveni"
+            android:onClick="StartSettings"
+            android:textColorHint="@color/white" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:hint="@string/AboutGame"
+            android:onClick="About"
+            android:textColorHint="@color/white" />
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button"
+            android:hint="@string/Exit"
+            android:onClick="Exit"
+            android:textColorHint="@color/white" />
+    </LinearLayout>
+
+</FrameLayout>

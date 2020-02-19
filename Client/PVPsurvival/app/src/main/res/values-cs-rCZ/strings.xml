@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">PVP survival</string>
+    <string name="Character">Character</string>
+    <string name="butStats">Stats</string>
+    <string name="warning1">Min 4 znaky!</string>
+    <string name="edittextSetName">Zde zadej své herní jméno</string>
+    <string name="backtomenu">Zpět do menu</string>
+    <string name="behaviour">Behaviour</string>
+    <string name="inventory">Inventory</string>
+    <string name="chat">Chat</string>
+    <string name="trip">Trip</string>
+    <string name="fight">Fight</string>
+    <string name="hunt">Hunt</string>
+    <string name="create_something">Create something</string>
+    <string name="explore_surrounding">Explore surrounding</string>
+    <string name="change_body_position">Change body position</string>
+    <string name="lets_travel_there">Lets travel there</string>
+    <string name="effect_fire">a magnificent glow with great smoke</string>
+    <string name="basicLook_cliff">the foot of the rock cliff</string>
+    <string name="lets_go_there">Lets go there...</string>
+    <string name="inventary_food_but">Food</string>
+</resources>

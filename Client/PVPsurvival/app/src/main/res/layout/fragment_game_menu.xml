@@ -1,0 +1,84 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.belafon.pvpsurvival.TheGame.Fragments.GameMenuFragment"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:id="@+id/R"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/buttonsRelLay"
+            android:layout_width="157dp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/Behavior"
+                    android:layout_width="140dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/button2"
+                    android:hint="@string/behaviour"
+                    android:textColorHint="@color/white"
+                    android:onClick="changeFragment"/>
+
+                <Button
+                    android:id="@+id/Inventory"
+                    android:layout_width="140dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/button2"
+                    android:hint="@string/inventory"
+                    android:textColorHint="@color/white"
+                    android:onClick="changeFragment"/>
+
+                <Button
+                    android:id="@+id/Trip"
+                    android:layout_width="140dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/button2"
+                    android:hint="@string/trip"
+                    android:textColorHint="@color/white"
+                    android:onClick="changeFragment"/>
+                <Button
+                    android:id="@+id/Chat"
+                    android:layout_width="140dp"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="4dp"
+                    android:background="@drawable/button2"
+                    android:hint="@string/chat"
+                    android:textColorHint="@color/white"
+                    android:onClick="changeFragment"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

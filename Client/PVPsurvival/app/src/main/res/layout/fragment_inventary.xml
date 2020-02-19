@@ -1,0 +1,166 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.belafon.pvpsurvival.TheGame.Fragments.InventaryFragment"
+    android:background="@color/transparent">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/invrntoryMainRelLay">
+      <!-- TODO: Update blank fragment layout -->
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:orientation="horizontal"
+          android:id="@+id/menu_inventory_layout">
+
+          <ScrollView
+              android:layout_width="200dp"
+              android:layout_height="match_parent">
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical">
+
+                  <Button
+                      android:id="@+id/inventary_food_but"
+                      android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:background="@drawable/button"
+                      android:hint="@string/inventary_food_but"
+                      android:onClick="inventary_food_but"
+                      android:textColorHint="@color/white"
+                      android:layout_marginTop="8dp"/>
+
+                  <Button
+                      android:id="@+id/inventary_clothes_but"
+                      android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:background="@drawable/button"
+                      android:hint="@string/inventary_clothes_but"
+                      android:onClick="inventary_clothes_but"
+                      android:textColorHint="@color/white" />
+
+                  <Button
+                      android:id="@+id/inventary_tools_but"
+                      android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:background="@drawable/button"
+                      android:hint="@string/inventary_tools_but"
+                      android:onClick="inventary_tools_but"
+                      android:textColorHint="@color/white" />
+
+                  <Button
+                      android:id="@+id/inventary_nature_resources_but"
+                      android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:background="@drawable/button"
+                      android:hint="@string/inventary_nature_resources_but"
+                      android:onClick="inventary_nature_resources_but"
+                      android:textColorHint="@color/white" />
+
+                  <Button
+                      android:id="@+id/inventary_others_but"
+                      android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:background="@drawable/button"
+                      android:hint="@string/inventary_others_but"
+                      android:onClick="inventary_others_but"
+                      android:textColorHint="@color/white" />
+
+                  <Button
+                      android:id="@+id/inventary_quest_but"
+                      android:layout_width="match_parent"
+                      android:layout_height="50dp"
+                      android:background="@drawable/button"
+                      android:hint="@string/inventary_quest_but"
+                      android:onClick="inventary_quest_but"
+                      android:textColorHint="@color/white" />
+              </LinearLayout>
+          </ScrollView>
+          <Button
+              android:id="@+id/menu_inventory_but"
+              android:layout_width="150dp"
+              android:layout_height="35dp"
+              android:layout_marginRight="-50dp"
+              android:background="@drawable/button"
+              android:hint="@string/backtomenu"
+              android:onClick="goBackToGameMenu"
+              android:textColorHint="@color/white" />
+      </LinearLayout>
+
+      <!-- Here you can see list of your items -->
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:visibility="gone"
+          android:id="@+id/inventary_background_cant_be_touched">
+          <Button
+              android:onClick="setInventaryInfoAboutItemsGone"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/transparent"/>
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/relLaySignAboutItmes"
+          android:visibility="gone"
+          android:layout_centerVertical="true"
+          android:layout_centerHorizontal="true"
+          android:layout_width="300dp"
+          android:layout_height="250dp"
+          android:background="@drawable/button2">
+          <ScrollView
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="vertical"
+                  android:id="@+id/list_items">
+              </LinearLayout>
+          </ScrollView>
+      </RelativeLayout>
+  </RelativeLayout>
+
+    <!-- Here you can see info about specific item -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/inventary_background_cant_be_touched_specific_item">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLaySignAboutOneItem"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="550dp"
+        android:layout_height="250dp"
+        android:background="@drawable/button2">
+
+        <Button
+            android:id="@+id/set_gone_inventory_but_2"
+            android:layout_width="150dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="14dp"
+            android:layout_marginEnd="26dp"
+            android:background="@drawable/button"
+            android:hint="@string/backtomenu"
+            android:onClick="setInventaryInfoAboutItemGone"
+            android:textColorHint="@color/white" />
+    </RelativeLayout>
+
+</FrameLayout>

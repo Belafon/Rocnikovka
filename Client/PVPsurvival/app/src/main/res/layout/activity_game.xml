@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.belafon.pvpsurvival.TheGame.GameActivity"
+    android:id="@+id/backrgroundOfLayoutGame">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/color_filter"
+        android:background="@color/transparent"/>
+    <View
+        android:id="@+id/color_filter_clouds"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/transparent" />
+
+    <fragment
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fragment"
+        android:name="com.belafon.pvpsurvival.TheGame.Fragments.EmptyFragment">
+    </fragment>
+
+    <Button
+        android:id="@+id/makePopap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="18dp"
+        android:hint="Make popap text!"
+        android:onClick="makePopap" />
+    <TextView
+        android:id="@+id/popapTextFeels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginEnd="13dp"
+        android:background="@color/transparentBlack"
+        android:hint="Kokoska je kokoska a kokoskou zustane!"
+        android:maxWidth="150sp"
+        android:onClick="dissapearPopap"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textColorHint="@color/white"
+        android:textSize="15sp"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/popapTextNoticed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="11dp"
+        android:background="@color/transparentBlack"
+        android:hint="Kokoska je kokoska a kokoskou zustane!"
+        android:maxWidth="150sp"
+        android:onClick="dissapearPopap"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textColorHint="@color/white"
+        android:textSize="15sp"
+        android:visibility="gone" />
+    <TextView
+        android:id="@+id/popapTextChat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="11dp"
+        android:layout_marginStart="13dp"
+        android:background="@color/transparentBlack"
+        android:hint="Kokoska je kokoska a kokoskou zustane!"
+        android:maxWidth="150sp"
+        android:onClick="dissapearPopap"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:textColorHint="@color/white"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+</RelativeLayout>
