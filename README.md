@@ -1,7 +1,7 @@
 # Rocnikovka
 Projekt je rozdělen na dva samostatné programy - Server a Klient
 
-```uml
+```mermaid
 User "1" -- "*" Workspace : has access to
 Workspace "1" -- "*" Case : contains
 Workspace "1" -- "*" SubjectContainer : contains
